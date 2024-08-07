@@ -18,8 +18,7 @@ async function fetchAccessToken() {
 
 async function fetchEmployees() {
     const token = await fetchAccessToken();
-    if (!token) return; // Exit if token retrieval fails
-
+    if (!token) return;
     try {
         const response = await fetch(`https://${domain}/rest/user.get.json?auth=${token}`);
         if (!response.ok) {
