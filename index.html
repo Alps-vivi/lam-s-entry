@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    <div id="container">
+        <h1>Employee List</h1>
+        <button id="refresh">Refresh</button>
+        <button id="view" disabled>View Employee</button>
+        <ul id="employee-list"></ul>
+    </div>
+    <div id="dialog" class="hidden">
+        <div class="dialog-content">
+            <span id="close-dialog">&times;</span>
+            <h2>Employee Details</h2>
+            <p id="employee-details"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
